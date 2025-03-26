@@ -8,3 +8,11 @@ for i in range(n):
         end=time.time()
         print(end-start)
         
+
+
+        def silnia_rek(liczba):
+            if liczba<2:
+                return 1 
+            else:
+                return liczba*silnia_rek(liczba-1)
+            print(silnia_rek(5))
